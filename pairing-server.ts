@@ -300,7 +300,7 @@ app.post('/pair', async (req: Request, res: Response) => {
         }
       }, 60000);
       
-      const onConnectionUpdate = (update: any) => {
+     const onConnectionUpdate = async (update: any) => {
         const { connection, qr, lastDisconnect } = update;
         
         if (connection === 'connecting') {
