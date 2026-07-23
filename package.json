@@ -1,0 +1,21 @@
+{
+  "name": "MARIA-Pairing",
+  "version": "4.0.0",
+  "description": "MARIA MM Pairing Server",
+  "main": "pairing-server.ts",
+  "type": "module",
+  "scripts": {
+    "start": "npx tsx pairing-server.ts"
+  },
+  "author": "MARKMELLON",
+  "license": "MIT",
+  "dependencies": {
+    "@whiskeysockets/baileys": "latest",
+    "express": "^5.2.1",
+    "pino": "^8.21.0",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
