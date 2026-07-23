@@ -591,4 +591,4 @@ git push origin feature/your-feature-name
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F5FF,30:B400FF,60:0a0a1a,100:000000&height=160&section=footer&text=XYLO-MD+v3.3.0+⚡&fontSize=22&fontColor=00F5FF&fontAlignY=65&animation=twinkling&reversal=false" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F5FF,30:B400FF,60:0a0a1a,100:000000&height=160&section=footer&text=MARIA-MD+v3.3.0+⚡&fontSize=22&fontColor=00F5FF&fontAlignY=65&animation=twinkling&reversal=false" width="100%">
