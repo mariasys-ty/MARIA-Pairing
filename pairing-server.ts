@@ -15,9 +15,9 @@ import {
   fetchLatestBaileysVersion
 } from '@whiskeysockets/baileys';
 
-// Bulletproof import for https-proxy-agent (handles both ESM and CommonJS)
-import * as HttpsProxyAgentModule from 'https-proxy-agent';
-const HttpsProxyAgent = (HttpsProxyAgentModule as any).default || (HttpsProxyAgentModule as any).HttpsProxyAgent;
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const HttpsProxyAgent = require('https-proxy-agent');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
