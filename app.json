@@ -1,7 +1,7 @@
 {
   "name": "MARIA-MM-Pairing",
   "description": "Pairing Code & QR Code generator for MARIA-MM WhatsApp Bot.",
-  "repository": "https://github.com/your-username/MARIA-Pairing",
+  "repository": "https://github.com/mariasys-ty/MARIA-Pairing",
   "stack": "heroku-24",
   "env": {
     "PORT": {
