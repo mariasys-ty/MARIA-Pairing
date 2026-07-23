@@ -17,7 +17,8 @@ import {
 
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
-const HttpsProxyAgent = require('https-proxy-agent');
+// Destructure the class properly to prevent "not a constructor" error
+const { HttpsProxyAgent } = require('https-proxy-agent');
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -81,6 +82,7 @@ app.get('/health', (req: Request, res: Response) => {
     time: new Date().toISOString()
   });
 });
+
 // ============================================
 // QR CODE SESSION MANAGER & ENDPOINTS
 // ============================================
@@ -196,6 +198,7 @@ app.get('/api/qr-status', (req: Request, res: Response) => {
     return res.json({ success: true, connected: false });
   }
 });
+
 // ============================================
 // MAIN ENDPOINT: POST /pair
 // ============================================
@@ -300,7 +303,7 @@ app.post('/pair', async (req: Request, res: Response) => {
         }
       }, 60000);
       
-     const onConnectionUpdate = async (update: any) => {
+      const onConnectionUpdate = async (update: any) => {
         const { connection, qr, lastDisconnect } = update;
         
         if (connection === 'connecting') {
@@ -314,7 +317,7 @@ app.post('/pair', async (req: Request, res: Response) => {
           resolve();
         }
         
-               if (connection === 'open') {
+        if (connection === 'open') {
           console.log(`[PAIR #${reqId}] User paired successfully!`);
           
           // --- SEND WELCOME MESSAGE & SESSION ID ---
