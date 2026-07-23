@@ -6,7 +6,7 @@
 
 <div align="center">
 
-<a href="https://ik.imagekit.io/s95tumxuk/IMG_2360.jpeg">
+<a href="https://ik.imagekit.io/s95tumxuk/IMG_3935.png">
 <img src="https://ik.imagekit.io/s95tumxuk/IMG_2360.jpeg" width="140" height="140" style="border-radius:50%;border:3px solid #00F5FF;box-shadow:0 0 30px #00F5FF" alt="XYLO-MD Logo">
 </a>
 
